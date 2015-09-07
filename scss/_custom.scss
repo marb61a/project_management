@@ -30,3 +30,50 @@ body{
 		color:#ffffff;
 	}
 }
+
+.item{
+	text-align:center;
+	background: $primary-color !important;
+	overflow:auto;
+	width:100%;
+	height:auto;
+	display:block;
+	padding-top:15px;
+	padding-bottom:10px;
+}
+
+.item:hover{
+	background: $hover-color !important;
+}
+
+.item.active{
+	background: $active-color !important;
+}
+
+.white-bg{
+	background:#ffffff;
+	overflow:auto;
+	padding:20px;
+}
+
+.primary-bg{
+	background: $primary-color;
+	overflow:auto;
+	padding:20px;
+
+	label{
+		color:#ffffff;
+	}
+}
+
+footer{
+	background:$primary-color;
+	height:80px;
+	margin-top:30px;
+
+	p{
+		color:#ffffff;
+		text-align:center;
+		padding-top:20px;
+	}
+}
