@@ -1,0 +1,145 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome | Project Details</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="row">
+        <img src="img/logo.png">
+      </div>
+    </div>
+
+    <div class="row icons">
+      <div class="large-2 small-12 columns">
+        <a href="index.html" class="item active">
+          <i class="fa fa-tasks"></i>
+          <label>Projects</label>
+        </a>
+      </div>
+      <div class="large-2 small-12 columns">
+        <a href="categories.html" class="item">
+          <i class="fa fa-folder"></i>
+          <label>Categories</label>
+        </a>
+      </div>
+      <div class="large-2 small-12 columns">
+        <a href="users.html" class="item">
+          <i class="fa fa-user"></i>
+          <label>Users</label>
+        </a>
+      </div>
+      <div class="large-2 small-12 columns">
+        <a href="messages.html" class="item">
+          <i class="fa fa-send-o"></i>
+          <label>Messages</label>
+        </a>
+      </div>
+      <div class="large-2 small-12 columns">
+        <a href="files.html" class="item">
+          <i class="fa fa-paperclip"></i>
+          <label>Files</label>
+        </a>
+      </div>
+      <div class="large-2 small-12 columns">
+        
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-8 columns white-bg">
+          <h3>Project H <a class="button tiny pull-right" href="#" data-reveal-id="edit-form">Edit</a></h3>
+
+          <div id="edit-form" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <h3>Edit Project</h3>
+            <form>
+                        <div class="row">
+                            <div class="large-12 columns">
+                              <label>Project Name
+                                <input type="text" value="Project H"/>
+                              </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="large-12 columns">
+                              <label>Category
+                                <select>
+                                    <option selected>Web Development</option>
+                                    <option>Web Design</option>
+                                    <option>Search Engine Optimization</option>
+                                  </select>
+                              </label>
+                            </div>
+                          </div>
+                        <div class="row">
+                            <div class="large-12 columns">
+                              <label>Notes
+                                <textarea>This is where the project notes would go</textarea>
+                              </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="large-12 columns">                  
+                                <input type="submit" class="button" value="Save project" />
+                            </div>
+                        </div>
+                    </form>  
+          </div>
+
+          <strong>Status: </strong> 65% Complete (<a href="#" data-reveal-id="status">Change</a>)
+
+          <div id="status" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+            <div class="range-slider" data-slider>
+                        <span class="range-slider-handle" role="slider" tabindex="0"></span>
+                        <span class="range-slider-active-segment"></span>
+                        <input type="hidden">
+                      </div>
+          </div>
+
+          <div class="progress large-12 success round">
+            <span class="meter" style="width: 65%"></span>
+          </div>
+
+          <br>
+
+          <div>
+            <strong>Category: </strong> Web Development
+          </div>
+
+          <br>
+
+          <div>
+            <h3>Notes: </h3>
+            <p>This is where the notes go</p>
+          </div>
+       
+      </div>
+      <div class="large-3 columns primary-bg">
+        <form>
+          <label>
+            Search Projects
+            <input type="text">
+          </label>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="large-12 columns">
+          <p>Copyright &copy; 2015 - Project Management</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
